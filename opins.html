@@ -1,408 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opins</title>
-  <link rel="stylesheet" href="../css/opins.css">
-  <script src="/js/opins.js"></script>
-</head>
-<body>
-  
-  <header id="#Home">
-      <img src="../media/opins logo.png" alt="">
-    <nav>
-      <ul>
-        <li><a class="home" href="#Home">Home</a>
-        <section id="sub-menu-1">
-           <ul>
-            <li><a href="#">Home One</a></li>
-            <li><a  href="#">Home Two</a></li>
-            <li id="header-v"><a href="#">Header Version</a>
-              <section id="sub-menu-2">
-                <ul>
-                 <li><a href="#">Header One</a></li>
-                 <li><a href="#">Header Two</a></li>
-                </ul>
-             </section>
-            </li>
-           </ul>
-        </section>
-        </li>
-        <li><a href="#Features">Features</a></li>
-        <li><a href="#Pricing">Pricing</a></li>
-        <li><a href="#Testimonials">Testimonials</a></li>
-        <li><a href="#Blog">Blog</a>
-          <section id="sub-menu-1">
-            <ul>
-             <li><a href="#">Blog Page</a></li>
-             <li><a href="#">Blog Details</a></li>
-            </ul>
-         </section></li>
-      </ul>
-    </nav>
-    <button class="loginBtn" onclick="openLoginPage()">Login</button>
-    <div><ion-icon class="bx bx-menu" id="menu-btn" name="menu-outline"></ion-icon></div>
-      
-   
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opins</title>
+    <link rel="stylesheet" href="../css/opins.css" />
+    <script src="/js/opins.js"></script>
+  </head>
+  <body>
+    <header id="#Home">
+      <img src="../media/opins logo.png" alt="" />
+      <nav>
+        <ul>
+          <li>
+            <a class="home" href="#Home">Home</a>
+            <div id="sub-menu-1">
+              <ul>
+                <li><a href="#">Home One</a></li>
+                <li><a href="#">Home Two</a></li>
+                <li id="header-v">
+                  <a href="#">Header Version</a>
+                  <div id="sub-menu-2">
+                    <ul>
+                      <li><a href="#">Header One</a></li>
+                      <li><a href="#">Header Two</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#Pricing">Pricing</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li>
+            <a href="#Blog">Blog</a>
+            <div id="sub-menu-1">
+              <ul>
+                <li><a href="#">Blog Page</a></li>
+                <li><a href="#">Blog Details</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <button class="loginBtn" onclick="openLoginPage()">Login</button>
+      <div>
+        <ion-icon
+          class="bx bx-menu"
+          id="menu-btn"
+          name="menu-outline"
+        ></ion-icon>
+      </div>
+    </header>
 
-  <div class="Login-Form hidden">
-<form action="">
-  <ion-icon name="close-circle-outline" class="closebtn" onclick="closeLoginPage()"></ion-icon>
-  <label for="">UserName :</label>
-  <input type="text" class="username" placeholder="Enter Your UserName Here" required> <br>
-  <label for="">Password :</label>
-  <input type="password" class="password" placeholder="*******" required>
-  <input type="submit" class="submit" value="Log In"> <br>
-  <a href="#">Forget Your Password</a>
-</form>
-  </div>
+    <div class="Login-Form hidden">
+      <form action="">
+        <ion-icon
+          name="close-circle-outline"
+          class="closebtn"
+          onclick="closeLoginPage()"
+        ></ion-icon>
+        <label for="">UserName :</label>
+        <input
+          type="text"
+          class="username"
+          placeholder="Enter Your UserName Here"
+          required
+        />
+        <br />
+        <label for="">Password :</label>
+        <input
+          type="password"
+          class="password"
+          placeholder="*******"
+          required
+        />
+        <input type="submit" class="submit" value="Log In" /> <br />
+        <a href="#">Forget Your Password</a>
+      </form>
+    </div>
 
-  <!-- <section id="disc">
+    <!-- <div id="disc">
     <span id="disc-1"></span>
     <span id="disc-2"></span>
     <span id="disc-3"></span>
     <span id="disc-4"></span>
     <span id="disc-5"></span>
     <span id="disc-6"></span>
-  </section> -->
+  </div> -->
 
-  <article id="best-app">
-    <section>
-      <h2>Best Mobile App <br>Template for your <br> Business.</h2>
-      <p>Excepteur sint occaecat cupidatat non proident sunt in 
-        <br>Culpa qui officia deserunt mollit lorem ipsum anim id est
-        <br>laborum perspiciatis unde
-      </p>
-    <span>
-      <button id="btn">
-        <ion-icon name="play"></ion-icon>
-         <a href="#">Get in <br>play Store</a>
-      </button>
-      <button id="btn">
-        <ion-icon name="logo-apple"></ion-icon>
-         <a href="#">Get in <br>play Store</a>
-      </button>
-    </span>
-    </section>
-    <img src="../media/banner 1.png" alt="">
-  </article>
-
-  <article>
-    <main id="Numbers">
-      <h3>NUMBERS SPEAKS EVERYTHING</h3>
-      <section id="count">
-        <aside>
-          <article>4789</article>
-          <p>DOWNLOADS</p>
-        </aside>
-        <aside>
-          <article>6400</article>
-          <p>LIKES</p>
-        </aside>
-        <aside>
-          <article>900</article>
-          <p>5 STAR RATING</p>
-        </aside>
-        <aside>
-          <article>266</article>
-          <p>AWARDS</p>
-        </aside>
-      </section>
-    </main>
-  </article>
-
- <article id="Features">
-  <article id="orange-logo">
-    <img src="../media/orange circle.png" alt="">
-    <section>
-      Effective tools for <br> busy administrators.
-    </section>
-  </article>
- </article>
- 
-  <article id="cards">
-     <section id="card">
-      <div><ion-icon name="phone-portrait-outline"></ion-icon></div>
-        <h4>High Creative App <br>Display</h4>
-        <div>
-          There are many variations of <br>passages of lorem ipsum but <br>majority have suffered
-        </div>
-       <div><a href="#">READ MORE</a></div>
-     </section>   
-     <section id="card">
-      <div><ion-icon name="phone-portrait-outline"></ion-icon></div>
-      <h4>Unique and Custom <br>Options</h4>
+    <div id="best-app">
       <div>
-        There are many variations of <br>passages of lorem ipsum but <br>majority have suffered
+        <h2>
+          Best Mobile App <br />Template for your <br />
+          Business.
+        </h2>
+        <p>
+          Excepteur sint occaecat cupidatat non proident sunt in <br />Culpa qui
+          officia deserunt mollit lorem ipsum anim id est <br />laborum
+          perspiciatis unde
+        </p>
+        <span>
+          <button id="btn">
+            <ion-icon name="play"></ion-icon>
+            <a href="#">Get in <br />play Store</a>
+          </button>
+          <button id="btn">
+            <ion-icon name="logo-apple"></ion-icon>
+            <a href="#">Get in <br />play Store</a>
+          </button>
+        </span>
       </div>
-      <a href="#">READ MORE</a>
-   </section> 
-   <section id="card">
-    <div><ion-icon name="phone-portrait-outline"></ion-icon></div>
-    <h4>Secure and Perfect <br>Integration</h4>
+      <img src="../media/banner 1.png" alt="" />
+    </div>
+
     <div>
-      There are many variations of <br>passages of lorem ipsum but <br>majority have suffered
+      <main id="Numbers">
+        <h3>NUMBERS SPEAKS EVERYTHING</h3>
+        <div id="count">
+          <div>
+            <div>4789</div>
+            <p>DOWNLOADS</p>
+          </div>
+          <div>
+            <div>6400</div>
+            <p>LIKES</p>
+          </div>
+          <div>
+            <div>900</div>
+            <p>5 STAR RATING</p>
+          </div>
+          <div>
+            <div>266</div>
+            <p>AWARDS</p>
+          </div>
+        </div>
+      </main>
     </div>
-    <a href="#">READ MORE</a>
- </section> 
-  </article>
 
-  <div class="banner-2">
-    <img class="ph-banner2" src="../media/banner 2.png" alt="">
-    <div class="aside">
-      <img src="../media/purple circle.png" alt="">
-      <div class="take-a">Take a control on your <br>mobile app.</div>
-      <div class="duis">Duis aute irure dolor in reprehenderit in voluptate <br>
-        velit esse cillum dolore eu fugiat nulla pariatur.</div>
+    <div id="Features">
+      <div id="orange-logo">
+        <img src="../media/orange circle.png" alt="" />
+        <div>
+          Effective tools for <br />
+          busy administrators.
+        </div>
+      </div>
+    </div>
+
+    <div id="cards">
+      <div id="card">
+        <div><ion-icon name="phone-portrait-outline"></ion-icon></div>
+        <h4>High Creative App <br />Display</h4>
+        <div>
+          There are many variations of <br />passages of lorem ipsum but
+          <br />majority have suffered
+        </div>
+        <div><a href="#">READ MORE</a></div>
+      </div>
+      <div id="card">
+        <div><ion-icon name="phone-portrait-outline"></ion-icon></div>
+        <h4>Unique and Custom <br />Options</h4>
+        <div>
+          There are many variations of <br />passages of lorem ipsum but
+          <br />majority have suffered
+        </div>
+        <a href="#">READ MORE</a>
+      </div>
+      <div id="card">
+        <div><ion-icon name="phone-portrait-outline"></ion-icon></div>
+        <h4>Secure and Perfect <br />Integration</h4>
+        <div>
+          There are many variations of <br />passages of lorem ipsum but
+          <br />majority have suffered
+        </div>
+        <a href="#">READ MORE</a>
+      </div>
+    </div>
+
+    <div class="banner-2">
+      <img class="ph-banner2" src="../media/banner 2.png" alt="" />
+      <div class="div">
+        <img src="../media/purple circle.png" alt="" />
+        <div class="take-a">Take a control on your <br />mobile app.</div>
+        <div class="duis">
+          Duis aute irure dolor in reprehenderit in voluptate <br />
+          velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
         <div class="mark">
-          <p><ion-icon name="checkmark-outline"></ion-icon>Refresing to get such a personal touch.</p>
-          <p><ion-icon name="checkmark-outline"></ion-icon>Duis aute irure dolor in reprehenderit in voluptate.</p>
-          <p><ion-icon name="checkmark-outline"></ion-icon>Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>
+            <ion-icon name="checkmark-outline"></ion-icon>Refresing to get such
+            a personal touch.
+          </p>
+          <p>
+            <ion-icon name="checkmark-outline"></ion-icon>Duis aute irure dolor
+            in reprehenderit in voluptate.
+          </p>
+          <p>
+            <ion-icon name="checkmark-outline"></ion-icon>Velit esse cillum
+            dolore eu fugiat nulla pariatur.
+          </p>
         </div>
         <button>Learn More</button>
+      </div>
     </div>
-  </div>
 
-  <div class="banner-3">
-    <div class="aside">
-      <img src="../media/blue cricle.png" alt="">
-      <div class="take-a">Powerful tools for your<br>Customers</div>
-      <div class="duis">Duis aute irure dolor in reprehenderit in voluptate <br>
-        velit esse cillum dolore eu fugiat nulla pariatur.</div>
+    <div class="banner-3">
+      <div class="div">
+        <img src="../media/blue cricle.png" alt="" />
+        <div class="take-a">Powerful tools for your<br />Customers</div>
+        <div class="duis">
+          Duis aute irure dolor in reprehenderit in voluptate <br />
+          velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
         <div class="mark">
-          <p><ion-icon name="checkmark-outline"></ion-icon>Refresing to get such a personal touch.</p>
-          <p><ion-icon name="checkmark-outline"></ion-icon>Duis aute irure dolor in reprehenderit in voluptate.</p>
-          <p><ion-icon name="checkmark-outline"></ion-icon>Velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>
+            <ion-icon name="checkmark-outline"></ion-icon>Refresing to get such
+            a personal touch.
+          </p>
+          <p>
+            <ion-icon name="checkmark-outline"></ion-icon>Duis aute irure dolor
+            in reprehenderit in voluptate.
+          </p>
+          <p>
+            <ion-icon name="checkmark-outline"></ion-icon>Velit esse cillum
+            dolore eu fugiat nulla pariatur.
+          </p>
         </div>
         <button>Learn More</button>
+      </div>
+      <img class="ph-banner3" src="..//media/banner 3.png" alt="" />
     </div>
-    <img class="ph-banner3" src="..//media/banner 3.png" alt="">
-  </div>
 
-  <article id="Pricing">
-    <img src="../media/yellow circle.png" alt="">
-    <h3>Choose plans which suits <br>your needs.</h3>
+    <div id="Pricing">
+      <img src="../media/yellow circle.png" alt="" />
+      <h3>Choose plans which suits <br />your needs.</h3>
 
-    <section id="btn">
-      <button class="monthly-payment" onclick="changeMonthlyPay()">Monthly</button>
-      <button class="yearly-payment" onclick="changeYearlyPay()" >Yearly</button>
-    </section>
-  </article>
+      <div id="btn">
+        <button class="monthly-payment" onclick="changeMonthlyPay()">
+          Monthly
+        </button>
+        <button class="yearly-payment" onclick="changeYearlyPay()">
+          Yearly
+        </button>
+      </div>
+    </div>
 
-  <article id="price-cards">
-    <section id="p-cards">
-      <h4 class="basic-pack">$20.00</h4>
-      <p>BASIC PACK</p>
-      <h5>Extra features <br>Lifetime free support <br>Upgrate options <br>Full access</h5>
-      <button id="btn-1">Purchase</button>
-      <h5>NO HIDDEN CHARGES!</h5>
-    </section>
-    <section id="p-cards">
-      <h4 class="pro-pack">$30.00</h4>
-      <p>PROFESSIONAL PACK</p>
-      <h5>Extra features <br>Lifetime free support <br>Upgrate options <br>Full access</h5>
-      <button id="btn-2">Purchase</button>
-      <h5>NO HIDDEN CHARGES!</h5>
-    </section>
-    <section id="p-cards">
-      <h4 class="bus-pack">$40.00</h4>
-      <p>BUSINESS PACK</p>
-      <h5>Extra features <br>Lifetime free support <br>Upgrate options <br>Full access</h5>
-      <button id="btn-3">Purchase</button>
-      <h5>NO HIDDEN CHARGES!</h5>
-    </section>
-  </article>
+    <div id="price-cards">
+      <div id="p-cards">
+        <h4 class="basic-pack">$20.00</h4>
+        <p>BASIC PACK</p>
+        <h5>
+          Extra features <br />Lifetime free support <br />Upgrate options
+          <br />Full access
+        </h5>
+        <button id="btn-1">Purchase</button>
+        <h5>NO HIDDEN CHARGES!</h5>
+      </div>
+      <div id="p-cards">
+        <h4 class="pro-pack">$30.00</h4>
+        <p>PROFESSIONAL PACK</p>
+        <h5>
+          Extra features <br />Lifetime free support <br />Upgrate options
+          <br />Full access
+        </h5>
+        <button id="btn-2">Purchase</button>
+        <h5>NO HIDDEN CHARGES!</h5>
+      </div>
+      <div id="p-cards">
+        <h4 class="bus-pack">$40.00</h4>
+        <p>BUSINESS PACK</p>
+        <h5>
+          Extra features <br />Lifetime free support <br />Upgrate options
+          <br />Full access
+        </h5>
+        <button id="btn-3">Purchase</button>
+        <h5>NO HIDDEN CHARGES!</h5>
+      </div>
+    </div>
 
-  <article id="Testimonials">
-    <section id="rounded-imgs-section">
-      <img id="rounded-imgs-1" src="../media/Untitled-1.png" alt="">
-      <img  id="rounded-imgs" src="../media/rounded pics 2.jpg" alt="">
-    </section>
-    <section id="green-logo-txt">
-      <img id="green-logo" src="../media/green circle.png" alt="green-logo">
-      <h4>Whats our clients are <br>saying.</h4>
-      <p>This is due to their excellent service,competitive <br>pricing and customer support. it's throughly referesing <br>to get such a personal touch. Duis aute irure dolor in <br>reprehendent in voluptate velit esse cillum dolore eu <br>fuglat nulla pariatur</p>
-      <b>Edward higghins</b>
-    </section>
-    </article>
+    <div id="Testimonials">
+      <div id="rounded-imgs-div">
+        <img id="rounded-imgs-1" src="../media/Untitled-1.png" alt="" />
+        <img id="rounded-imgs" src="../media/rounded pics 2.jpg" alt="" />
+      </div>
+      <div id="green-logo-txt">
+        <img id="green-logo" src="../media/green circle.png" alt="green-logo" />
+        <h4>Whats our clients are <br />saying.</h4>
+        <p>
+          This is due to their excellent service,competitive <br />pricing and
+          customer support. it's throughly referesing <br />to get such a
+          personal touch. Duis aute irure dolor in <br />reprehendent in
+          voluptate velit esse cillum dolore eu <br />fuglat nulla pariatur
+        </p>
+        <b>Edward higghins</b>
+      </div>
+    </div>
 
-    <article id="envato">
-      <img src="../media/envato.png" alt="">
-      <img src="../media/envato.png" alt="">
-      <img src="../media/envato.png" alt="">
-      <img src="../media/envato.png" alt="">
-      <img src="../media/envato.png" alt="">
-    </article>
+    <div id="envato">
+      <img src="../media/envato.png" alt="" />
+      <img src="../media/envato.png" alt="" />
+      <img src="../media/envato.png" alt="" />
+      <img src="../media/envato.png" alt="" />
+      <img src="../media/envato.png" alt="" />
+    </div>
 
-    <article >
-     <section id="orange-logo">
-      <img src="../media/orange circle.png" alt="">
-      <h4>Want to ask something <br>from us?</h4>
-     </section>
-      <section id="pre-and">
+    <div>
+      <div id="orange-logo">
+        <img src="../media/orange circle.png" alt="" />
+        <h4>Want to ask something <br />from us?</h4>
+      </div>
+      <div id="pre-and">
         <details>
-          <summary>Pre and post lanch mobiile app marketing pitfails to avoid</summary><p>There are many variations of passages of available but majority have alteration in some by inject humour <br>
-            or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque <br> aliquam.</p>
+          <summary>
+            Pre and post lanch mobiile app marketing pitfails to avoid
+          </summary>
+          <p>
+            There are many variations of passages of available but majority have
+            alteration in some by inject humour <br />
+            or random words. Lorem ipsum dolor sit amet, error insolens
+            reprimique no quo, ea pri verterem phaedr vel ea iisque <br />
+            aliquam.
+          </p>
         </details>
         <details>
-          <summary>Pre and post lanch mobiile app marketing pitfails to avoid</summary><p>There are many variations of passages of available but majority have alteration in some by inject humour <br>
-            or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque <br> aliquam.</p>
+          <summary>
+            Pre and post lanch mobiile app marketing pitfails to avoid
+          </summary>
+          <p>
+            There are many variations of passages of available but majority have
+            alteration in some by inject humour <br />
+            or random words. Lorem ipsum dolor sit amet, error insolens
+            reprimique no quo, ea pri verterem phaedr vel ea iisque <br />
+            aliquam.
+          </p>
         </details>
         <details>
-          <summary>Pre and post lanch mobiile app marketing pitfails to avoid</summary><p>There are many variations of passages of available but majority have alteration in some by inject humour <br>
-            or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque <br> aliquam.</p>
+          <summary>
+            Pre and post lanch mobiile app marketing pitfails to avoid
+          </summary>
+          <p>
+            There are many variations of passages of available but majority have
+            alteration in some by inject humour <br />
+            or random words. Lorem ipsum dolor sit amet, error insolens
+            reprimique no quo, ea pri verterem phaedr vel ea iisque <br />
+            aliquam.
+          </p>
         </details>
         <details>
-          <summary>Pre and post lanch mobiile app marketing pitfails to avoid</summary><p>There are many variations of passages of available but majority have alteration in some by inject humour <br>
-            or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque <br> aliquam.</p>
+          <summary>
+            Pre and post lanch mobiile app marketing pitfails to avoid
+          </summary>
+          <p>
+            There are many variations of passages of available but majority have
+            alteration in some by inject humour <br />
+            or random words. Lorem ipsum dolor sit amet, error insolens
+            reprimique no quo, ea pri verterem phaedr vel ea iisque <br />
+            aliquam.
+          </p>
         </details>
-      </section>
-    </article>
-    
-    <article id="Blog">
-      <section id="blue-logo">
-        <img src="../media/green circle.png" alt="">
-        <h4>Check out our latest <br>news & articles.</h4>
-       </section>
-       <section id="pre-cards">
-        <section id="pre-card">
-          <section id="card-img">
-          <b id="date">30 April, 2019</b></section>
-          <section id="admin"><a id="a-1" href="#">BY ADMIN</a> . <a id="a-2" href="#">2 COMMMENTS</a></section>
-          <section id="pre-and-post"><a href="#">
-            Pre and post launch mobile app <br>marketing pitfalls to avoid
-          </a></section>
-          <p>Threr are many variations of passages of available <br>but majority have alteration in some by inject <br>humour or random words.</p>
+      </div>
+    </div>
+
+    <div id="Blog">
+      <div id="blue-logo">
+        <img src="../media/green circle.png" alt="" />
+        <h4>Check out our latest <br />news & divs.</h4>
+      </div>
+      <div id="pre-cards">
+        <div id="pre-card">
+          <div id="card-img">
+            <b id="date">30 April, 2019</b>
+          </div>
+          <div id="admin">
+            <a id="a-1" href="#">BY ADMIN</a> .
+            <a id="a-2" href="#">2 COMMMENTS</a>
+          </div>
+          <div id="pre-and-post">
+            <a href="#">
+              Pre and post launch mobile app <br />marketing pitfalls to avoid
+            </a>
+          </div>
+          <p>
+            Threr are many variations of passages of available <br />but
+            majority have alteration in some by inject <br />humour or random
+            words.
+          </p>
           <a id="read" href="#">READ MORE</a>
-        </section>
-        <section id="pre-cards">
-          <section id="pre-card">
-            <section id="card-img-2">
-            <b id="date">30 April, 2019</b></section>
-            <section id="admin"><a id="a-1" href="#">BY ADMIN</a> . <a id="a-2" href="#">2 COMMMENTS</a></section>
-            <section id="pre-and-post"><a href="#">
-              Social currency high perfor- <br>mance keyword or
-            </a></section>
-            <p>Threr are many variations of passages of available <br>but majority have alteration in some by inject <br>humour or random words.</p>
+        </div>
+        <div id="pre-cards">
+          <div id="pre-card">
+            <div id="card-img-2">
+              <b id="date">30 April, 2019</b>
+            </div>
+            <div id="admin">
+              <a id="a-1" href="#">BY ADMIN</a> .
+              <a id="a-2" href="#">2 COMMMENTS</a>
+            </div>
+            <div id="pre-and-post">
+              <a href="#">
+                Social currency high perfor- <br />mance keyword or
+              </a>
+            </div>
+            <p>
+              Threr are many variations of passages of available <br />but
+              majority have alteration in some by inject <br />humour or random
+              words.
+            </p>
             <a id="read" href="#">READ MORE</a>
-          </section>
-          <section id="pre-cards">
-            <section id="pre-card">
-              <section id="card-img-3">
-              <b id="date">30 April, 2019</b></section>
-              <section id="admin"><a id="a-1" href="#">BY ADMIN</a> . <a id="a-2" href="#">2 COMMMENTS</a></section>
-              <section id="pre-and-post"><a href="#">
-                Prioritize these line items<br>quarterly sales are at
-              </a></section>
-              <p>Threr are many variations of passages of available <br>but majority have alteration in some by inject <br>humour or random words.</p>
+          </div>
+          <div id="pre-cards">
+            <div id="pre-card">
+              <div id="card-img-3">
+                <b id="date">30 April, 2019</b>
+              </div>
+              <div id="admin">
+                <a id="a-1" href="#">BY ADMIN</a> .
+                <a id="a-2" href="#">2 COMMMENTS</a>
+              </div>
+              <div id="pre-and-post">
+                <a href="#">
+                  Prioritize these line items<br />quarterly sales are at
+                </a>
+              </div>
+              <p>
+                Threr are many variations of passages of available <br />but
+                majority have alteration in some by inject <br />humour or
+                random words.
+              </p>
               <a id="read" href="#">READ MORE</a>
-            </section>
-       </section>
-    </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <article>
-      <section id="sub">
-        Subscribe now to get <br>company news.
-      </section>
-     <section id="sub-form">
-      <form>
-        <input type="email" placeholder="Enter your email" required>
-        <input class="submit-btn" type="submit" value="Subscribe">
-      </form>
-     </section>
-    </article>
+    <div>
+      <div id="sub">Subscribe now to get <br />company news.</div>
+      <div id="sub-form">
+        <form>
+          <input
+            class="gmail-box"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input id="submit-btn" type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </div>
 
     <footer>
-      <img src="../media/opins logo.png" alt="">
-     <section>
-      <h4>Address</h4>
-      <ul>
-        <li>888 999 0000</li>
-        <li>needhelp@opins.com</li>
-        <li>855 road, broklyu street</li>
-        <li>new york 600</li>
-      </ul>
-     </section>
-     <section>
-      <h4>Explore</h4>
-      <ul id="footer-a">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">How It Works</a></li>
-      </ul>
-     </section>
-     <section>
-      <h4>Links</h4>
-      <ul id="footer-a">
-        <li><a href="#">Helps</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Contact</a></li>
-     </ul>
-     </section>
-     <section>
-      <h4>Follow</h4>
-      <aside>
-
-      </aside>
-     </section>
+      <img src="../media/opins logo.png" alt="" />
+      <div>
+        <h4>Address</h4>
+        <ul>
+          <li>888 999 0000</li>
+          <li>needhelp@opins.com</li>
+          <li>855 road, broklyu street</li>
+          <li>new york 600</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul id="footer-a">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">How It Works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul id="footer-a">
+          <li><a href="#">Helps</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </footer>
 
-    <article id="copyright">
-      © copyright 2020 by <a href="#">Layerdrops.com</a>
-    </article>
+    <div id="copyright">© copyright 2020 by <a href="#">Layerdrops.com</a></div>
 
     <!-- Js Part From Here -->
     <script>
-
       // Login Pop Window
       function openLoginPage() {
-  document.querySelector(".hidden").style.display = "flex";
-  console.log("Login Window Opened");
-}
+        document.querySelector(".hidden").style.display = "flex";
+        console.log("Login Window Opened");
+      }
 
-function closeLoginPage() {
-  document.querySelector(".hidden").style.display = "none";
-  console.log("Login Window Closed");
-}
+      function closeLoginPage() {
+        document.querySelector(".hidden").style.display = "none";
+        console.log("Login Window Closed");
+      }
 
-let menu = document.querySelector("#menu-btn");
-let navbar = document.querySelector("nav");
+      let menu = document.querySelector("#menu-btn");
+      let navbar = document.querySelector("nav");
 
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navbar.classList.toggle("open");
-}
+      menu.onclick = () => {
+        menu.classList.toggle("bx-x");
+        navbar.classList.toggle("open");
+      };
 
-// Price Info
-function changeYearlyPay() {
-  document.querySelector(".yearly-payment").style.backgroundColor = "#f700ff";
-  document.querySelector(".yearly-payment").style.Color = "white";
-  document.querySelector(".monthly-payment").style.backgroundColor = "white";
-  document.querySelector(".monthly-payment").style.Color = "black";
-  document.querySelector(".basic-pack").textContent = "$200";
-  document.querySelector(".pro-pack").textContent = "$300";
-  document.querySelector(".bus-pack").textContent = "$400";
-}
+      // Price Info
+      function changeYearlyPay() {
+        document.querySelector(".yearly-payment").style.backgroundColor =
+          "#f700ff";
+        document.querySelector(".yearly-payment").style.Color = "white";
+        document.querySelector(".monthly-payment").style.backgroundColor =
+          "white";
+        document.querySelector(".monthly-payment").style.Color = "black";
+        document.querySelector(".basic-pack").textContent = "$200";
+        document.querySelector(".pro-pack").textContent = "$300";
+        document.querySelector(".bus-pack").textContent = "$400";
+      }
 
-function changeMonthlyPay() {
-  document.querySelector(".yearly-payment").style.backgroundColor = "white";
-  document.querySelector(".yearly-payment").style.Color = "white";
-  document.querySelector(".monthly-payment").style.backgroundColor = "#f700ff";
-  document.querySelector(".monthly-payment").style.Color = "black";
-  document.querySelector(".basic-pack").textContent = "$20.00";
-  document.querySelector(".pro-pack").textContent = "$30.00";
-  document.querySelector(".bus-pack").textContent = "$40.00";
-}
-
+      function changeMonthlyPay() {
+        document.querySelector(".yearly-payment").style.backgroundColor =
+          "white";
+        document.querySelector(".yearly-payment").style.Color = "white";
+        document.querySelector(".monthly-payment").style.backgroundColor =
+          "#f700ff";
+        document.querySelector(".monthly-payment").style.Color = "black";
+        document.querySelector(".basic-pack").textContent = "$20.00";
+        document.querySelector(".pro-pack").textContent = "$30.00";
+        document.querySelector(".bus-pack").textContent = "$40.00";
+      }
     </script>
-
-</body>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </html>
